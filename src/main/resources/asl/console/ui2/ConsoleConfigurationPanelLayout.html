@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ </head> 
+ <body> 
+  <vaadin-vertical-layout size-auto margin-top> 
+   <vaadin-label style-name="serverDesc" size-auto plain-text _id="serverDescription">
+     Information about server... 
+   </vaadin-label> 
+   <vaadin-horizontal-layout> 
+    <vaadin-horizontal-layout _id="labelsLayout"> 
+     <vaadin-vertical-layout width="101px" height="98px"> 
+      <vaadin-label size-auto plain-text _id="blankLabel2" :expand></vaadin-label> 
+      <vaadin-label width-auto height-full plain-text _id="lowerValueLabel3" :expand>
+        Lower Value: 
+      </vaadin-label> 
+      <vaadin-label width-auto height-full plain-text _id="upperValueLabel2" :expand>
+        Upper Value: 
+      </vaadin-label> 
+     </vaadin-vertical-layout> 
+    </vaadin-horizontal-layout> 
+    <vaadin-horizontal-layout _id="parametersLayout"></vaadin-horizontal-layout> 
+    <vaadin-vertical-layout width="170px" height="98px" margin-left _id="saveChangesButtonLayout"> 
+     <vaadin-button width="170px" height="73px" plain-text _id="saveChangesButton" :bottom :center>
+       Save changes 
+     </vaadin-button> 
+    </vaadin-vertical-layout> 
+   </vaadin-horizontal-layout> 
+  </vaadin-vertical-layout>  
+ </body>
+</html>

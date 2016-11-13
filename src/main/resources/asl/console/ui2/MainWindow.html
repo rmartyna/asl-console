@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8" name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+ </head> 
+ <body> 
+  <vaadin-horizontal-layout style-name="valo-menu-responsive" responsive id="responsive-application-template" height-full> 
+   <vaadin-css-layout style-name="valo-menu" width="300px" height-full _id="menuCssLayout"> 
+    <vaadin-css-layout style-name="valo-menu-part borderless-colored icon-align-right" size-full> 
+     <vaadin-css-layout style-name="valo-menuitems" size-full _id="mainMenu"> 
+      <vaadin-button icon="fonticon://FontAwesome/f015" style-name="als-home-button huge icon-align-right borderless" width-full height="150px" plain-text _id="aslHomeButton">
+        ASL Console 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f233" primary-style-name="valo-menu-item" _id="serversStateButton">
+        Servers state 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f067" primary-style-name="valo-menu-item" style-name="add-functionality-button" height="30px" _id="addServerButton">
+        Add New Server 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f068" primary-style-name="valo-menu-item" style-name="add-functionality-button" height="30px" _id="removeServerButton">
+        Remove Server 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f013" primary-style-name="valo-menu-item" _id="consoleConfigurationButton">
+        Console Configuration 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f02d" primary-style-name="valo-menu-item" _id="systemLogsButton">
+        System Logs 
+      </vaadin-button> 
+      <vaadin-button icon="fonticon://FontAwesome/f013" primary-style-name="valo-menu-item" _id="daemonsConfigurationButton">
+        Daemons Configuration 
+      </vaadin-button> 
+     </vaadin-css-layout> 
+    </vaadin-css-layout> 
+   </vaadin-css-layout> 
+   <vaadin-panel responsive width="100px" height="30px" _id="contentPanel"> 
+    <vaadin-vertical-layout style-name="contentLayout" size-auto margin-right _id="contentVerticalLayout"></vaadin-vertical-layout> 
+   </vaadin-panel> 
+  </vaadin-horizontal-layout>  
+ </body>
+</html>
