@@ -146,7 +146,7 @@ public class ServersStateView extends ServersStateLayout {
 				value = memory.getCurrent() / divisor;
 				lower = consoleConfiguration.getRamLowerBound();
 				upper = consoleConfiguration.getRamUpperBound();
-				valueString = df.format(value / divisor) + " / " + df.format(memory.getMax() / divisor) + " GB";
+				valueString = df.format(value) + " / " + df.format(memory.getMax() / divisor) + " GB";
 			} else if(paramName.equals(Constants.NETWORK_DOWNLOAD_LABEL) && network != null) {
 				value = network.getDownload();
 				lower = consoleConfiguration.getNetworkDlLowerBound();
@@ -171,7 +171,7 @@ public class ServersStateView extends ServersStateLayout {
 				value = partition.getCurrent() / divisor;
 				lower = consoleConfiguration.getDiskUsageLowerBound();
 				upper = consoleConfiguration.getDiskUsageUpperBound();
-				valueString = df.format(partition.getCurrent() / divisor) + " / " + df.format(partition.getMax() / divisor) + " GB";
+				valueString = df.format(value) + " / " + df.format(partition.getMax() / divisor) + " GB";
 			}
 
 			if(value < lower)
