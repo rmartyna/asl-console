@@ -1,6 +1,6 @@
 build/
 coverage.ec
-/target
+target/
 target
 velocity.log
 velocity.log*
@@ -12,3 +12,4 @@ src/main/webapp/VAADIN/widgetsets/*
 .classpath
 .project
 .settings
+.idea/

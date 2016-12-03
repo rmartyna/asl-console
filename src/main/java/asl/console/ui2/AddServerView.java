@@ -27,7 +27,7 @@ public class AddServerView extends AddServerLayout {
 			public void buttonClick(ClickEvent event) {
 				try {
 
-					Service service = new Service(ipTextField.getValue(), Integer.parseInt(portTextField.getValue()), serverNameTextField.getValue(), getPasswordHash("aqq123"));
+					Service service = new Service(ipTextField.getValue(), Integer.parseInt(portTextField.getValue()), serverNameTextField.getValue(), getPasswordHash(passTextField.getValue()));
 
 					MyUI.context.getBean(ServiceDAO.class).insert(service);
 
